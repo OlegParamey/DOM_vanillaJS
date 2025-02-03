@@ -1,13 +1,15 @@
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f0f0f0;
+	background-color: #333;
+	color: #fff;
 }
 .container {
 	width: 600px;
 	margin: 50px auto;
 	text-align: center;
 }
-button {
+
+.btn {
 	padding: 10px 20px;
 	font-size: 16px;
 	background-color: #007bff;
@@ -16,10 +18,25 @@ button {
 	border: none;
 	cursor: pointer;
 }
-button:hover {
+.btn:hover {
 	background-color: #0056b3;
 }
-button:active {
+.btn:active {
 	background-color: #000000;
 	color: white;
+}
+p {
+	margin: 10px;
+}
+.quote {
+	font-style: italic;
+}
+
+.quote::after,
+.quote::before {
+	content: '"';
+}
+
+#quote-author {
+	font-weight: bold;
 }
