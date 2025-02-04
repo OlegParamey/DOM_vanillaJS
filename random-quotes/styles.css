@@ -44,11 +44,19 @@ body {
 	background-color: #000000;
 	color: white;
 }
-p {
-	margin: 10px;
-}
 .quote {
 	font-style: italic;
+}
+
+.star-icon {
+	font-size: 30px;
+	color: yellow;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+p {
+	margin: 10px;
 }
 
 .quote::after,
