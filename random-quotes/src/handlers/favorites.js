@@ -1,4 +1,4 @@
-import { currentQuote } from './quote.js';
+import { currentQuote } from '../../index.js';
 const toggleBtn = document.getElementById("toggle-favorite-btn");
 const favoritesContainer = document.getElementById("favorites-container");
 
@@ -10,7 +10,7 @@ function toggleFavorite() {
   currentQuote.isFavorite = !currentQuote.isFavorite;
   toggleFavoriteIcon(currentQuote.isFavorite, toggleBtn);
   currentQuote.isFavorite
-    ? showFavoriteCard(currentQuote.text, currentQuote.author)
+    ? showFavoriteCard(currentQuote.text, currentQuote.author, favoritesContainer)
     : hideFavoriteCard(currentQuote.text);
 }
 
@@ -32,14 +32,14 @@ function hideBtn(btn) {
   btn.style.display = "none";
 }
 
-function showFavoriteCard(text, author) {
+function showFavoriteCard(text, author, container) {
   const favoriteCard = document.createElement("div");
   favoriteCard.classList.add("favorite-card");
   favoriteCard.innerHTML = `
 		<p class="quote">${text}</p>
 		<p id="quote-author"">${author}</p>
 		`;
-  favoritesContainer.appendChild(favoriteCard);
+  container.appendChild(favoriteCard);
 }
 
 function hideFavoriteCard(text) {
