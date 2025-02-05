@@ -1,4 +1,3 @@
-import quotes from "../data/quotes.js";
 import { handleFavorite } from "./favorites.js";
 import { generateRandomInt } from "../utils.js";
 
