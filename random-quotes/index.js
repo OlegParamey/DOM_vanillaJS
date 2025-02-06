@@ -8,15 +8,15 @@ function setCurrentQuote(quote) {
 	currentQuote = quote;
 }
 
-const favoriteBtn = document.getElementById("favorite-btn");
+const quoteFavoriteBtn = document.getElementById("quote-favorite-btn");
 const favoritesContainer = document.getElementById("favorites-container");
-hideFavoriteBtn(favoriteBtn);
-favoriteBtn.addEventListener("click", () =>
-	toggleFavorite(currentQuote, favoriteBtn, favoritesContainer));
+hideFavoriteBtn();
+quoteFavoriteBtn.addEventListener("click", () =>
+	toggleFavorite(currentQuote, quoteFavoriteBtn, favoritesContainer));
 
 const generateButton = document.getElementById("generate-btn");
 generateButton.addEventListener("click", () =>
 	handleQuote(quotes, setCurrentQuote));
 
 
-export { favoriteBtn };
+export { quoteFavoriteBtn };
