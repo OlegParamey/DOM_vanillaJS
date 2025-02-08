@@ -72,11 +72,6 @@ body {
 	margin-block-end: 0.7em;
 }
 
-.quote-text::after,
-.quote-text::before {
-	content: '"';
-}
-
 .quote-author {
 	font-weight: bold;
 	margin-block-start: 0.7em;

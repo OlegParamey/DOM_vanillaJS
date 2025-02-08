@@ -43,7 +43,7 @@ function showFavoriteCard(quote, container) {
   favoriteCard.dataset.favoriteQuoteId = id;
   favoriteCard.innerHTML = `
   <div class="favorite-card-content">
-  <p class="quote-text">${text}</p>
+  <p class="quote-text">"${text}"</p>
   <p class="favorite-card-author">${author}</p>
   </div>
   <button class="btn btn-danger">Remove from favorites <i class="far fa-trash-alt"></i></button>
