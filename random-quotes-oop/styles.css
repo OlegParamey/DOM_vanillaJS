@@ -1,0 +1,92 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #333;
+	color: #fff;
+}
+.container {
+	width: 600px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.favorites-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.favorite-card {
+	display: flex;
+	flex-direction: column;
+	color: black;
+	background-color: #f9f9f9;
+	padding: 10px 15px;
+	margin: 10px;
+	border-radius: 8px;
+	width: 25%;
+}
+
+.favorite-card-content {
+	flex: 1;
+	padding: 0 1px;
+}
+.btn {
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-primary {
+	background-color: #007bff;
+}
+
+.btn-primary:hover {
+	background-color: #0056b3;
+}
+.btn-danger {
+	background-color: transparent;
+	color: red;
+	border: 2px solid red;
+}
+.btn-danger:hover {
+	background-color: red;
+	color: white;
+}
+
+.btn:active {
+	border-color: black;
+	background-color: black;
+	color: white;
+}
+
+.quote {
+	font-size: 1.2em;
+}
+
+.quote-text {
+	font-style: italic;
+	min-height: 2.3em;
+	margin-block-end: 0.7em;
+}
+
+.quote-author {
+	font-weight: bold;
+	margin-block-start: 0.7em;
+}
+.favorite-card-author {
+	font-style: italic;
+	font-weight: bold;
+}
+.star-icon {
+	font-size: 30px;
+	color: yellow;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+/* p {
+	margin: 10px;
+} */
