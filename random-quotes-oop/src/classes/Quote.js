@@ -3,11 +3,14 @@ class Quote {
     this.id = id;
     this.text = text;
     this.author = author;
-    // this.isFavorite = false;
   }
 
-  info() {
-    return `Quote has id ${this.id} and author is ${this.author}`
+  formatText() {
+    return `"${this.text}"`
+  }
+
+  formatAuthor() {
+    return `© ${this.author}`
   }
 }
 
