@@ -31,7 +31,8 @@ body {
 	padding: 0 1px;
 }
 .btn {
-	padding: 10px 20px;
+	padding: 13px 20px;
+	margin: 0px 5px;
 	font-size: 16px;
 	color: #fff;
 	border-radius: 10px;
@@ -46,6 +47,15 @@ body {
 .btn-primary:hover {
 	background-color: #0056b3;
 }
+
+.btn-secondary {
+	background-color: #28a745;
+}
+
+.btn-secondary:hover {
+	background-color: #218838;
+}
+
 .btn-danger {
 	background-color: transparent;
 	color: red;
